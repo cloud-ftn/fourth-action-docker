@@ -20,4 +20,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag cloudftn/example:v2
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/example:v2
+      run: docker push ${{secrets.DOCKER_USERNAME}}/example:v2
